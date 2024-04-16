@@ -1,0 +1,360 @@
+header {
+    color:black;
+    padding: 10px;
+    text-align: center;
+    position:fixed;
+     width:100%;
+    top:0;
+    background-color:white; 
+}
+aside {  
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    height:100%;
+    top: 55px; 
+    bottom: 0;
+    margin-left:15px;
+    left: 0;
+    overflow-y: auto;
+    width: 240px; 
+}
+main {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:15px;
+    margin-top:35px;
+    padding:15px; 
+    margin-left: 255px; 
+    padding-top:70px;
+   
+}
+.random-content1 {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    max-height:auto;
+    overflow-y:auto;
+}
+
+
+
+.network-details{
+    display:flex;
+    gap:25px;
+    margin-bottom:25px;
+}
+.network-details  h1{
+    font-weight:500;
+    font-size:19px;
+   
+}
+.network-details1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+.item {
+    border: 1px solid #ccc;
+    /* padding: 20px; */
+    text-align: center;
+}
+.heading{
+    font-weight:bold;
+    font-size:11px;
+    margin-bottom:10px;
+    border-bottom:1px solid #ccc;
+    box-shadow:0 2px 4px rgba(0,0,0,0.1);
+    padding-bottom:5px;
+
+}
+.details{
+    font-size:16px;
+    line-height:1.5;
+}
+.weekly-trend-main{
+    display:flex;
+    margin-top:25px;
+    position:relative;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+.weekly-trend{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+   
+}
+.weekly-trend h1{
+    font-size:11px;
+    font-weight:bold;
+}
+.weekly-trend p{
+    margin-bottom:25px;
+    position:absolute;
+    top:25px;
+}
+
+.dropdown {
+   
+    width:185px;
+    position:absolute;
+    top:5px;
+    left:465px;
+    
+}
+
+ .dropdown-content {
+    /* display: none; */
+    position: absolute;
+    padding:10px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content option {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content option:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+} 
+.customers table {
+    width: 100%;
+    border-collapse: collapse;
+}
+ 
+.customers th,
+.customers td {
+    border: 1px solid #ddd;
+    font-size:15px;
+    font-weight:500;
+    padding: 8px;
+    text-align: left;
+}
+ 
+.customers th {
+    background-color:grey;
+}
+
+th {
+    background-color: hsla(0, 0%, 95%, 0.112); 
+}
+.customers td{
+    color:blue;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternate background color for data rows */
+}
+.user-details{
+    display:flex;
+    margin-top:35px;
+    justify-content:space-between;
+
+}
+.location{
+    display:flex;
+    width:47%;
+   gap:75px;
+   padding:10px;
+    background-color:rgba(128, 128, 128, 0.738);
+    /* flex:1; */
+}
+.location h2{
+    font-size:15px;
+}
+.location img{
+    width:35px;
+    height:35px;
+}
+.contact{
+    display:flex;
+    width:47%;
+    padding:10px;
+    background-color:rgba(128,128,128,0.738);
+    gap:75px;
+}
+.contact h2{
+    font-size:15px;
+}
+.contact img{
+    width:35px;
+    height:35px;
+}
+.chart img{
+    width:725px;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    width: 625px; /* Increased width */
+    height: 8px; /* Reduced height */
+    background-color: purple;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    overflow: visible;
+  }
+  
+  .progress-track {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .progress-circle {
+    width: 10px; /* Adjust circle size as needed */
+    height: 10px;
+    border-radius: 50%;
+    background-color: #212121;
+    overflow: visible;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .progress-circle.completed {
+    background-color: black; /* Change to your desired completed color */
+  }
+  .progress-circle.incompleted{
+    background-color: white;
+
+  }
+  .step-number {
+    color: white;
+    font-size: 10px;
+    position: absolute; /* Added for step number positioning */
+    top: 50%; /* Center vertically within circle */
+    left: 50%; /* Center horizontally within circle */
+    /* transform: translate(-50%, -50%); */
+  }
+  
+
+  .task-log-data{
+    margin-top: 1.5rem;
+  }
+
+
+  .task-log-header{
+    margin-left: 3rem;
+    margin-top: -1.8rem;
+    font-weight: bolder;
+  }
+
+  .task-log-para{
+    margin-left: 3rem;
+    margin-top: -1rem;
+  }
+
+  .progress-data{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .head{
+    font-weight: 600;
+    margin-top: 3rem;
+    margin-left: 1rem;
+  }
+
+  .task-header{
+    margin-top: 1rem;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+.details1{
+
+    color: purple;
+    position: fixed;
+    margin-left: 50rem;
+    margin-top: -1.5rem;
+    
+}
+
+.warn{
+    color: red;
+}
+
+.alarms{
+    margin-top: 1rem;
+    font-weight: bolder;
+
+}
+
+.alarms-buttons{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.alaram-data{
+    margin-top: 0.2rem;
+    margin-left: 1rem;
+
+}
+
+.critical{
+    background-color: lightcoral;
+    color: red;
+    font-weight: 800;
+    width: 100px;
+    border-radius: 12px;
+    height: 30px;
+}
+
+.major{
+    background-color: lightgoldenrodyellow;
+    color: orange;
+    font-weight: 800;
+    width: 100px;
+    border-radius: 12px;
+    height: 30px;
+    
+}
+
+.minor{
+    background-color: lightpink;
+    color: purple;
+    font-weight: 800;
+    width: 100px;
+    border-radius: 12px;
+    height: 30px;
+}
+
+.wrench-icon{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.wrench-data{
+    margin-left: 7rem;
+    margin-top: -1.7rem;
+
+}
+
+.open{
+    margin-left: 37rem;
+    margin-top: -3rem;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+

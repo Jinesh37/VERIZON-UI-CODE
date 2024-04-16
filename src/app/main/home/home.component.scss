@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+.container {
+    max-width: 100%;
+    min-height: 100vh; /* Changed height to min-height */
+    display: flex; /* Changed display to flex */
+    background-image: url('../../../assets/img/91.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* Adjusted background size */
+}
+.image img{
+    width:100%;
+    z-index:-1;
+    height:700px;
+    opacity:0.7;
+    border-radius:2px solid grey;
+    border-radius:50%;
+    // position:absolute;
+    // top:5px;
+
+}
+.logo{
+    color:white;
+    max-width:275px;
+    margin:auto;position:absolute;
+    top:35px;
+    left:325px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:155px;
+
+    // position:relative;
+}
+ 
+.left-box {
+    flex: 1; /* Added flex property */
+    padding: 20px; /* Added padding */
+}
+ 
+.right-box {
+    flex: 1; /* Added flex property */
+    padding: 20px; /* Added padding */
+}
+ 
+.circle-icon {
+    
+    width: 55px;
+    color: white;
+    height: 55px;
+    // padding:19px;
+    border-radius: 50%;
+    font-size:54px;
+    vertical-align:middle;
+    font-style:italic;
+    font-weight:500;
+    text-align: center;
+    margin: 0 10px; /* Adjusted margin */
+}
+ .circle-icon img{
+    width:100%;
+}
+.circle-icon1 img {
+    width: 85%;
+    font-size: 25px;
+    color: red;
+    filter: grayscale(100%);
+    border-radius: 5px;
+}
+ 
+.box1, .box2 {
+    display: flex;
+    width:575px;
+    position:relative;
+    margin-bottom:35px;
+    top:195px;
+    left:125px;
+    align-items: center; /* Added alignment */
+    margin-bottom: 20px; /* Adjusted margin */
+}
+.neumorphism {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px #c0c0c0, -5px -5px 15px #ffffff;
+
+}
+.button {
+    padding: 1em;
+    background: black;
+    width: 100%;
+    text-align: center;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: orangered;
+}
+ 
+.btn1 {
+    padding: 1em;
+    background: black;
+    border: 1px solid red;
+    width: 100%;
+    font-size: 18px; /* Adjusted font size */
+    text-align: center;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+ 
+.main {
+    display: flex;
+    flex-direction: column; /* Added flex-direction */
+    align-items: center; /* Added alignment */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// * {
+//     margin: 0;
+//     box-sizing: border-box;
+// }
+ 
+// .container {
+//     max-width: 100%;
+//     min-height: 100vh;
+//     display: flex;
+//     justify-content: center; /* Center content horizontally */
+//     align-items: center; /* Center content vertically */
+//     background-image: url('../../../assets/img/91.jpg');
+//     background-repeat: no-repeat;
+//     background-size: cover; 
+
+// }
+ 
+// .left-box {
+
+//     flex: 1;
+
+//     padding: 20px;
+
+// }
+ 
+// .right-box {
+
+//     flex: 1;
+
+//     padding: 20px;
+
+// }
+ 
+// .neumorphism {
+
+//     background-color: #f0f0f0;
+
+//     padding: 20px;
+
+//     border-radius: 15px;
+
+//     box-shadow: 5px 5px 15px #c0c0c0, -5px -5px 15px #ffffff;
+
+// }
+ 
+// .image img{
+//     width:100%;
+//     z-index:-1;
+//     height:700px;
+//     opacity:0.7;
+//     border-radius:2px solid grey;
+//     border-radius:50%;
+// }
+ 
+// .logo {
+
+//     max-width: 275px;
+
+//     margin-bottom: 20px;
+
+// }
+ 
+// .button {
+
+//     padding: 1em;
+
+//     background: black;
+
+//     width: 100%;
+
+//     text-align: center;
+
+//     color: white;
+
+//     border-radius: 6px;
+
+//     cursor: pointer;
+
+// }
+ 
+// .button:hover {
+
+//     background-color: orangered;
+
+// }
+ 
+// .circle-icon {
+
+   
+
+//     width: 55px;
+
+//     color: white;
+
+//     height: 55px;
+
+//     // padding: 19px;
+
+//     border-radius: 50%;
+
+//     font-size: 54px;
+
+//     vertical-align: middle;
+
+//     font-style: italic;
+
+//     font-weight: 500;
+
+//     text-align: center;
+
+//     margin: 0 10px;
+
+// }
+// .circle-icon img{
+//     width:100%;
+// }
+ 
+// .box1,
+
+// .box2 {
+
+//     display: flex;
+
+//     width: 575px;
+
+//     position: relative;
+
+//     margin-bottom: 35px;
+
+//     top: 195px;
+
+//     left: 125px;
+
+//     align-items: center;
+
+//     margin-bottom: 20px;
+
+// }

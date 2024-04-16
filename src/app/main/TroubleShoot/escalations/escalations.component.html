@@ -1,0 +1,206 @@
+<app-header></app-header>
+<app-sidenav></app-sidenav>
+
+<div class="task-list">
+    <p>Task list</p>
+</div>
+
+<div class="search-bar">
+    <input matInput type="search" placeholder="Search here">
+</div>
+
+<div class="current-task">
+    <input type="text" value="Get most current tasks  ." disabled style="color: purple;">
+</div>
+
+<table cellspacing="20">
+    <thead>
+        <tr style="padding: 2px; margin-left: -5rem">
+            <th> Case ID</th>
+            <th>Urgency</th>
+            <th>Deadline</th>
+            <th>Customer Name</th>
+            <th>LifeTime Value</th>
+            <th>Churn risk</th>
+            <th>Case type</th>
+            <th>Issue category</th>
+            <th>Initiating Agent</th>
+            <th>Case Status</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <div class="d-flex">
+                    <div class="ms-3">
+                        <button class="btn">I-1011</button>
+                    </div>
+                </div>
+            </td>
+
+
+            <td>
+                <div class="urgency">80</div>
+            </td>
+
+
+            <td>
+                <div class="deadline">3 hours</div>
+            </td>
+
+
+            <td>
+                <div class="d-flex align-items-center">
+                    <img src="https://mdbootstrap.com/img/new/avatars/6.jpg" class="rounded-circle" alt=""
+                        style="width: 45px; height: 45px" />
+                    <div class="ms-3">
+                        <p class="fw-bold mb-1">Alex Ray</p>
+                    </div>
+                </div>
+            </td>
+
+
+            <td>
+                <input class="platinum" type="text" disabled value="Platinum">
+            </td>
+
+            <td>
+                <div class="deadline" style="font-weight: 700;">High</div>
+            </td>
+
+            <td>
+                <div class="case">5G Throughputs</div>
+            </td>
+
+            <td>
+                <div class="case">Troubleshooting</div>
+            </td>
+
+            <td>
+                <div class="case">Specialist - Marco</div>
+            </td>
+
+            <td>
+                <div class="case">Investigation</div>
+            </td>
+
+            <td>
+                <button class="open" type="button">Open</button>
+            </td>
+
+
+
+        </tr>
+    </tbody>
+</table>
+
+
+<div class="troubleshooting-summary">
+    <h4 style="font-weight: 800;">Troubleshooting Status Summary</h4>
+
+    <div class="data">
+        <p class="step">Step</p>
+        <p class="status">Status</p>
+    </div>
+
+    <div class="data">
+        <p class="step-data">Power</p>
+        <button class="status-data" disabled style="color: green;">OK</button>
+    </div>
+
+    <div class="data">
+        <p class="step-data">Internet</p>
+        <button class="status-data" disabled style="color: red;">Fail</button>
+    </div>
+
+    <div class="data">
+        <p class="step-data">Speed Test</p>
+        <button class="status-data" disabled style="color: red; ">Fail</button>
+    </div>
+
+    <div class="audit">
+        <div class="audit-header" style="font-weight: 700;">
+        Audit Trail
+    </div>
+
+        <div class="audit-data">
+            06:30 AM - Contacted to the customer
+        </div>
+        <div class="audit-data">
+            06:32 AM - Performed a gateway hardware diagnostics
+        </div>
+        <div class="audit-data">
+            06:35 AM - Conducted a connectivity test
+    </div>
+    <div class="audit-data">
+        06:38 AM - Updated the firmware
+    </div>
+</div>
+
+<div class="task-log">
+
+    <div class="task-header">
+        Task log
+    </div>
+
+    <div class="details">
+        More details
+    </div>
+
+    <div class="progress-bar">
+
+          <div class="progress-data">
+            <div class="head">Customer notified</div>
+            <div class="head"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Router status<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; check</div>
+            <div class="head">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Firmware upgrade</div>
+            <div class="head">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Speed check</div>
+            <div class="head">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; troubleshooting</div>
+
+        </div>
+        
+
+          <div class="progress-container">
+            <div class="progress-track">
+              <div *ngFor="let step of steps; let i = index" class="progress-circle" [ngClass]="{'completed': i < progressValue}">
+                <!-- <span class="step-number" style="margin-top: -5rem;">{{ step }}</span> -->
+              </div>
+            </div>
+          </div>
+
+    
+    </div>
+
+
+    <div class="task-log-data">
+        <div class="task-log-icons">
+            <img src="../../../../assets/img/right.png" alt="right">
+                <h3 class="task-log-header"> Hardware diagnostics</h3>
+        </div>
+        <div class="task-log-para">
+            Please conduct a through diagnostic test to assess the hardware components and identify any potential issues or malfunction.
+        </div>
+
+        <div class="task-log-data" style="margin-top: 2rem;">
+            <img src="../../../../assets/img/wrong.jpg" alt="wrong" width="30" style="margin-top:-3rem ;">
+            <h3 class="task-log-header" style="margin-top: -3rem;"> Connectivity diagnostics</h3>
+        </div>
+
+        <div class="task-log-para">
+            Conduct Connectivity diagnostics to assess the network and internet connectivity.
+        </div>
+
+        <div class="task-log-data">
+            <img src="../../../../assets/img/right.png" alt="right">
+            <h3 class="task-log-header" > T2 Troubleshooting</h3>
+        </div>
+
+        <div class="task-log-para">
+            Complete
+        </div>
+
+
+    </div>
+
+
+</div>

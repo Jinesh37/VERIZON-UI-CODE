@@ -1,0 +1,12 @@
+<div class="container"> 
+    <div class="sidenav">
+        <a routerLink="/troubleshoot/dashbaoard" [class.active]="isMenuItemActive('/troubleshoot/dashbaoard')"><mat-icon class="sideicon">dashboard</mat-icon> Dashboard</a>
+        <a routerLink="/troubleshoot/assignment" [class.active]="isMenuItemActive('/troubleshoot/assignment')"><mat-icon class="sideicon">assignment</mat-icon>Assignments</a>
+        <a routerLink="/troubleshoot/escalations" [class.active]="isMenuItemActive('/troubleshoot/escalations')"><mat-icon class="sideicon">error_outline</mat-icon>Escalations</a>
+        <a href="#"><mat-icon class="sideicon" [class.active]="isMenuItemActive('/troubleshoot/dashbaoard')"> insert_drive_file</mat-icon>Reports</a>
+        <a href="#"><mat-icon class="sideicon" [class.active]="isMenuItemActive('/troubleshoot/dashbaoard')">headset_mic</mat-icon>Support</a>
+        <div class="logout">
+            <a routerLink="/login"> <mat-icon class="sideicon">input</mat-icon>Logout</a>
+        </div>
+</div> 
+</div>

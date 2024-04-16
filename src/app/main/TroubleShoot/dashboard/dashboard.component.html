@@ -1,0 +1,94 @@
+<header>
+  <app-header></app-header>
+</header>
+<aside>
+    <app-sidenav></app-sidenav>
+</aside>
+<main>
+    <div class="dashbaord">
+
+        <div class="graph-1">
+            <div class="box">
+                <div class="box-title">
+                    FWA ODUs
+                </div>
+    
+                <div class="center-data">9</div>
+    
+                <ngx-charts-pie-chart [view]="[250, 250]" [results]="OutdoorData" [scheme]="colorScheme" [doughnut]="true"
+                    [legend]="true" [legendTitle]="'Outdoor Unit'" [legendPosition]="legendPosition">
+                </ngx-charts-pie-chart>
+            </div>
+    
+        </div>
+    
+    
+        <div class="graph-2">
+            <div class="box">
+                <div class="box-title">
+                    FWA IDUs
+                </div>
+    
+                <div class="center-data">4</div>
+    
+                <ngx-charts-pie-chart [view]="[250, 250]" [results]="IndoorData" [scheme]="colorScheme" [doughnut]="true"
+                    [legend]="true" [legendTitle]="'Indoor Unit'" [legendPosition]="legendPosition">
+                </ngx-charts-pie-chart>
+            </div>
+        </div>
+    
+    
+        <div class="graph-3">
+            <div class="box">
+                <div class="box-title">
+                    Staus: UTILIZATION
+                </div>
+    
+                <div class="center-data">2<br>
+                    <p style="font-weight: 400; margin-left: -1rem;">Ports</p>
+                </div>
+    
+                <ngx-charts-pie-chart [view]="[250, 250]" [results]="PortsData" [scheme]="greycolorScheme" [doughnut]="true"
+                    [legend]="true" [legendTitle]="'Switches: Non PoE Ports Utilized'" [legendPosition]="legendPosition">
+                </ngx-charts-pie-chart>
+            </div>
+        </div>
+    
+    
+        <div class="graph-4">
+            <div class="box">
+                <div class="box-title">
+                    Staus: Client Connectivity
+                </div>
+    
+                <div class="center-data">
+                    <p style="margin-left: -1rem;">180</p><br>
+                    <p style="font-weight: 400; margin-left: -1.5rem; margin-top: -2rem;">Clients</p>
+                </div>
+    
+                <ngx-charts-pie-chart [view]="[250, 250]" [results]="WirelessData" [scheme]="wirelesscolorScheme"
+                    [doughnut]="true" [legend]="true" [legendTitle]="'Wireless Clients'" [legendPosition]="legendPosition">
+                </ngx-charts-pie-chart>
+            </div>
+        </div>
+    
+    
+        <div class="graph-5">
+            <div class="box">
+                <div class="box-title">
+                    Staus: SSIDs
+                </div>
+    
+                <div class="center-data">
+                    <p style="margin-left: -1rem;">253</p><br>
+                    <p style="font-weight: 400; margin-left: -1.5rem; margin-top: -2rem;">SSIDs</p>
+                </div>
+    
+                <ngx-charts-pie-chart [view]="[250, 250]" [results]="SSIDData" [scheme]="ssidcolorScheme" [doughnut]="true"
+                    [legend]="true" [legendTitle]="'SSIDs'" [legendPosition]="legendPosition">
+                </ngx-charts-pie-chart>
+            </div>
+        </div>
+    
+    </div>
+</main>

@@ -1,0 +1,14 @@
+.gradient-custom {
+    /* fallback for old browsers */
+   background-image: url('../../../assets/img/backgrou.jpg');
+   /*background-image: url('../../assets/img/backgroundimg.jpg');*/
+   /* height: 100vh; */
+   background-repeat: no-repeat;
+  background-size: cover;
+  opacity:0.9;
+  overflow: hidden;
+}
+
+.card{
+    height: 38rem;
+}

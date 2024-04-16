@@ -1,0 +1,273 @@
+<header>
+    <app-header></app-header>
+</header>
+<aside>
+    <app-sidenav></app-sidenav>
+</aside>
+<main>
+    <div class="random-content1">
+        <div class="network-details">
+            <h1>Access Network Information</h1>
+            <button class="btn">L-1101</button>
+        </div>
+        <div class="network-details1">
+            <div class="item">
+                <div class="heading">CELL ID</div>
+                <div class="details">354863</div>
+
+            </div>
+            <div class="item">
+                <div class="heading">Service DL NR AFCN</div>
+                <div class="details">4862</div>
+
+            </div>
+            <div class="item">
+                <div class="heading">Detected[1-10]PCI</div>
+                <div class="details">349,465,788</div>
+
+            </div>
+            <div class="item">
+                <div class="heading">Configured PCI</div>
+                <div class="details">862</div>
+
+            </div>
+        </div>
+        <div class="weekly-trend-main">
+            <div class="weekly-trend">
+                <h1>Weekly Traffic Trend</h1>
+                <p>PCI 862</p>
+            </div>
+            <div class="dropdown">
+                <select class="dropdown-content">
+                    <option value="volvo">Select a Option</option>
+                    <option value="saab">Select Last 7 Days</option>
+                    <option value="mercedes">Select Last 15 Days</option>
+                    <option value="audi" selected>Select Last 1 Month</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="chart">
+            <img src="../../../../assets/img/Line-chart.png">
+        </div>
+        <div class="customers">
+            <h1>Affected FWA Customers</h1>
+            <table>
+                <tr>
+                    <th>IMEI</th>
+                    
+                    
+                </tr>
+                <tr>
+                    <td>350176352456341  
+                        <button class="notified">NOTIFIED</button>
+                    </td>               
+                   
+                </tr>
+                <tr>
+                    <td>350176352456342
+                        <button class="notified">NOTIFIED</button>
+                    </td>
+                   
+                </tr>
+                <tr>
+                    <td>350176352456343
+                        <button class="notified">NOTIFIED</button>
+                    </td>
+                   
+                </tr>
+                <tr>
+                    <td>350176352456344
+                        <button class="notified">NOTIFIED</button>
+                    </td>
+                   
+                </tr>
+                <tr>
+                    <td>350176352456345
+                        <button class="notified">NOTIFIED</button>
+                    </td>
+                   
+                </tr>
+            </table>
+        </div>
+        
+
+    </div>
+    <div class="random-content1">
+        <div class="task-log">
+
+            <div class="task-header">
+                Task log
+            </div>
+        
+            <div class="details1">
+                More details
+            </div>
+        
+            <div class="progress-bar">
+        
+                  <div class="progress-data">
+                    <div class="head" style="margin-left: -2px;">&nbsp;Customer notified</div>
+                    <div class="head">Router status<br> check</div>
+                    <div class="head">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Firmware upgrade</div>
+                    <div class="head">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Speed check</div>
+                    <div class="head">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T2<br> &nbsp;troubleshooting</div>
+        
+                </div>
+                
+        
+                  <div class="progress-container">
+                    <div class="progress-track">
+                      <div *ngFor="let step of steps; let i = index" class="progress-circle" [ngClass]="{'completed': i < progressValue}">
+                        <span class="step-number" style="margin-top: -5rem;">{{ step }}</span>
+                      </div>
+                    </div>
+                  </div>
+        
+            
+            </div>
+        
+        
+            <div class="task-log-data">
+                <div class="task-log-icons">
+                    <img src="../../../../assets/img/right.png" alt="right">
+                        <h3 class="task-log-header"> Hardware diagnostics</h3>
+                </div>
+                <div class="task-log-para">
+                    Please conduct a through diagnostic test to assess the hardware components and identify any potential issues or malfunction.
+                </div>
+        
+                <div class="task-log-data" style="margin-top: 2rem;">
+                    <img src="../../../../assets/img/right.png" alt="wrong" width="30" style="margin-top:-3rem ;">
+                    <h3 class="task-log-header" style="margin-top: -3rem;"> Connectivity diagnostics</h3>
+                </div>
+        
+                <div class="task-log-para">
+                    Conduct Connectivity diagnostics to assess the network and internet connectivity.
+                </div>
+
+                <div class="task-log-data">
+                    <img src="../../../../assets/img/right.png" alt="right">
+                    <h3 class="task-log-header" > T2 Troubleshooting</h3>
+                </div>
+        
+                <div class="task-log-para">
+                    Complete
+                </div>
+            </div>
+        </div>
+
+        <div class="results">
+            <div class="task-header">
+                Result
+            </div>
+
+            <div class="okay">
+                <mat-icon style="margin-top: 10px;">done_outline</mat-icon> 
+                <p style="margin-left: 2rem; margin-top: -1.5rem;">Service normal.</p>
+            </div>
+        </div>
+
+        <div class="Network">
+            <div class="task-header">
+                Network tickets
+            </div>
+
+            <div class="alarms">
+                <div class="task-header" style="font-size: medium;">Alarms</div>   
+            </div>
+            <p style="color: grey;">No alarms</p>
+
+            <div class="alarm-closed">
+                <div style="font-size: medium;">TICKET CLOSED</div>
+            </div>
+
+        </div>
+
+        <div class="wrench-icon">
+           <img src="../../../../assets/img/chevron-down.svg" alt="down" width="30">
+           <img src="../../../../assets/img/wrench.jpg" alt="wrench" width="50" style="margin-left: 1rem;">
+           <h2 class="task-header" style="margin-top: -0.7rem; margin-left: 1rem;">Ticket NWE2460</h2>       
+        </div>
+        <div class="wrench-data">
+            <p>Ericsson 3030 Power Module Replacement</p>
+        </div>
+
+        <div class="open">
+            <button type="button" style="color: white; background-color: black;" routerLink="/troubleshoot/escalations">Open</button>
+        </div>
+
+        <div class="map-data">
+            <div class="title">
+                Cell ID
+            </div>
+            <div class="cell-data">
+                354863
+            </div>
+
+            <div class="title">
+                Market Name
+            </div>
+            <div class="cell-data">
+                LA East
+            </div>
+
+            <div class="sla">
+                <button class="sla-btn">SLA: 24H</button>
+            </div>
+            
+            <div class="row-change">
+
+                <div class="title">
+                    Expected Resolution
+                </div>
+
+                <div class="cell-data" style="color: green;">
+                    RESOLVED
+                </div>
+
+                <div class="title">
+                    Ticket Created
+                </div>
+
+                <div class="cell-data">
+                    19:20 HRS 10.03.2024
+                </div>
+            </div>
+
+            <div class="row-change1">
+                <div class="title">
+                    Resolved Time
+                </div>
+
+                <div class="cell-data">
+                    5HRS
+                </div>
+
+                <div class="title">
+                    Worked on it
+                </div>
+
+                <div class="cell-data">
+                    Ray White
+                </div>
+            </div>
+
+            
+
+        </div>
+
+
+        <div class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3098.257779380069!2d77.70868401642427!3d12.97122696253982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1713094220103!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+
+
+    </div>
+
+
+</main>
+
+

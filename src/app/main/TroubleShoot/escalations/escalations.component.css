@@ -1,0 +1,280 @@
+*{
+    max-width:100%;
+    
+}
+table{
+    margin-top: 10rem;
+    padding: 10px 20px;
+    margin-left: 18rem;
+    
+    
+}
+
+td {
+    padding: 5px;
+    border: 2px solid lightgray;
+    text-align: center;
+  }
+  th{
+    text-align: center;
+  }
+
+  td:first-child{
+    border-radius: 12px;
+  }
+
+
+.urgency{
+    width: 3rem;
+    color: red;
+    background-color: transparent;
+    text-align: center;
+}
+
+.urgency-low{
+    width: 3rem;
+    color: black;
+    background-color: transparent;
+    text-align: center;
+}
+
+.btn{
+    color: blueviolet;
+}
+
+.btn:hover{
+    color: white;
+    background-color: blueviolet;
+}
+
+.deadline {
+    width: 7rem;
+    color: red;
+    background-color: transparent;
+    text-align: center;
+}
+
+.deadline-low{
+    width: 7rem;
+    color: black;
+    background-color: transparent;
+    text-align: center;
+}
+
+.platinum{
+    width: 6rem;
+    color: gold;
+    background-color: transparent;
+    text-align: center;
+}
+
+.silver{
+    width: 6rem;
+    color: silver;
+    background-color: transparent;
+    text-align: center;
+}
+
+.bronze{
+    width: 6rem;
+    color: brown;
+    background-color: transparent;
+    text-align: center;
+}
+
+.case{
+    width: 8rem;
+    color: black;
+    background-color: transparent;
+    text-align: center;
+}
+
+.open{
+    width: 4rem;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+.low{
+    width: 7rem;
+    color: black;
+    background-color: transparent;
+    text-align: center;
+}
+
+
+.task-list{
+    position: absolute;
+    margin-left: 18rem;
+    margin-top: 1.5rem;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.search-bar{
+    position: absolute;
+    margin-left: 24rem;
+    margin-top: 1.3rem;
+    font-size: large;
+    font-weight: bolder;
+    border: 4px solid  lightgray;
+    border-radius: 12px;
+    
+}
+
+.current-task{
+    position: absolute;
+    margin-top: 5rem;
+    margin-left: 18rem;
+    color: purple;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 4px solid  purple;
+    border-radius: 15px;
+}
+
+
+
+.filter{
+    position: fixed;
+    top: 7.4rem;
+    right: 3rem;
+}
+
+.filter:hover{
+    color: white;
+    background-color: blueviolet;
+}
+
+.troubleshooting-summary{
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 20rem;
+    padding: 7px;
+    border-left: 15px solid #ccc;
+   
+
+}
+
+.data{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15rem;
+}
+.step{
+    margin-left: -14rem;
+    color: grey;
+
+}
+.status{
+    position: relative;
+    margin-left: 10rem;
+    color: grey;
+}
+
+.step-data{
+    position: relative;
+    margin-left: -14rem;
+    color: purple;
+    font-weight: 400;
+    font-size: small;
+    margin-top: 0.3rem;
+}
+
+.status-data{
+    position: absolute;
+    margin-left: -2rem;
+    background-color: lightgrey;
+    height: 25px;
+}
+
+.task-log{
+    position: fixed;
+    right:1rem;
+    top:23rem;
+    padding: 7px;
+    border-left: 3px solid #ccc;
+    width: 900px;
+}
+
+.task-header{
+    margin-top: 1rem;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+.details{
+
+    color: purple;
+    position: fixed;
+    margin-left: 50rem;
+    margin-top: -1.5rem;
+    
+}
+  .progress-container {
+    display: flex;
+    align-items: center;
+    width: 800px; /* Increased width */
+    height: 8px; /* Reduced height */
+    background-color: purple;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+  
+  .progress-track {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .progress-circle {
+    width: 10px; /* Adjust circle size as needed */
+    height: 10px;
+    border-radius: 50%;
+    background-color: #212121;
+    overflow: visible;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .progress-circle.completed {
+    background-color: black; /* Change to your desired completed color */
+  }
+  
+  .step-number {
+    color: white;
+    font-size: 10px;
+    position: absolute; /* Added for step number positioning */
+    top: 50%; /* Center vertically within circle */
+    left: 50%; /* Center horizontally within circle */
+    /* transform: translate(-50%, -50%); */
+  }
+  
+
+  .task-log-data{
+    margin-top: 1.5rem;
+  }
+
+
+  .task-log-header{
+    margin-left: 3rem;
+    margin-top: -1.8rem;
+    font-weight: bolder;
+  }
+
+  .task-log-para{
+    margin-left: 3rem;
+    margin-top: -1rem;
+  }
+
+  .progress-data{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .head{
+    font-weight: 600;
+    margin-top: 3rem;
+    margin-left: 1rem;
+  }

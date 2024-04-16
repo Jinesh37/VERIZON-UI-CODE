@@ -1,0 +1,309 @@
+
+header {
+    color:black;
+    padding: 10px;
+    text-align: center;
+    position:fixed;
+     width:100%;
+    top:0;
+    background-color:white; 
+    /* z-index:100; */
+     
+
+    
+
+}
+aside {  
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    height:100%;
+    top: 55px; 
+    bottom: 0;
+    margin-left:15px;
+    left: 0;
+    overflow-y: auto;
+    width: 240px; 
+}
+main {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:15px;
+    margin-top:35px;
+    padding:15px; 
+    margin-left: 255px; 
+    padding-top:70px;
+   
+}
+.random-content1 {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    max-height:auto;
+    overflow-y:auto;
+}
+h1{
+    text-decoration:underline;
+    font-size:25px;
+    font-weight:500;
+}
+#user-information{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:5px;
+}
+
+#user-information-form,
+#troubleshoot,
+#time {
+    margin-bottom: 20px;
+}
+ 
+#form {
+    display: flex;
+    flex-direction: column;
+}
+ 
+label {
+    margin-bottom: 5px;
+}
+ 
+input[type="text"],
+input[type="number"],
+input[type="email"],
+button {
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+ 
+button.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+#troubleshoot table {
+    width: 100%;
+    border-collapse: collapse;
+}
+ 
+#troubleshoot th,
+#troubleshoot td {
+    border: 1px solid #ddd;
+    font-size:15px;
+    font-weight:500;
+    padding: 8px;
+    text-align: left;
+}
+ 
+#troubleshoot th {
+    background-color: #f2f2f2;
+}
+
+#troubleshoot button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    /* background-color: #28a745; */
+    color: #fff;
+}
+#troubleshoot  button.ok{
+    background-color: #28a745;
+}
+#troubleshoot button{
+    background-color:#dc3545;
+}
+ 
+
+
+ 
+
+ 
+#time-deatils p {
+    margin-bottom: 5px;
+}
+ 
+#time-deatils span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #007bff;
+    margin-right: 5px;
+}
+ 
+#time-deatils b {
+    font-weight: bold;
+}
+ 
+#time-deatils p:last-child {
+    margin-bottom: 0;
+}
+.extra-step{
+    background-color:rgb(221, 85, 221);
+    border:2px solid rgb(180, 84, 180);
+    border-radius:15px;
+    padding:15px;
+}
+.random-content2 {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+}
+.user-details{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+
+}
+.location{
+    display:flex;
+    flex-direction: row;
+    white-space: nowrap;
+    width:47%;
+   gap:75px;
+   padding:10px;
+    background-color:rgba(128, 128, 128, 0.738);
+    /* flex:1; */
+}
+.location h2{
+    font-size:15px;
+}
+.location img{
+    width:35px;
+    height:35px;
+    margin-left: -5rem;
+}
+.contact{
+    display:flex;
+    width:47%;
+    padding:10px;
+    white-space: nowrap;
+    background-color:rgba(128,128,128,0.738);
+    gap:75px;
+}
+.contact h2{
+    font-size:15px;
+}
+.contact img{
+    width:35px;
+    height:35px;
+    margin-left: -3rem;
+}
+
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    width: 800px; /* Increased width */
+    height: 8px; /* Reduced height */
+    background-color: purple;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+  
+  .progress-track {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .progress-circle {
+    width: 10px; /* Adjust circle size as needed */
+    height: 10px;
+    border-radius: 50%;
+    background-color: #212121;
+    overflow: visible;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .progress-circle.completed {
+    background-color: black; /* Change to your desired completed color */
+  }
+  
+  .step-number {
+    color: white;
+    font-size: 10px;
+    position: absolute; /* Added for step number positioning */
+    top: 50%; /* Center vertically within circle */
+    left: 50%; /* Center horizontally within circle */
+    /* transform: translate(-50%, -50%); */
+  }
+  
+
+  .task-log-data{
+    margin-top: 1.5rem;
+  }
+
+
+  .task-log-header{
+    margin-left: 3rem;
+    margin-top: -1.8rem;
+    font-weight: bolder;
+  }
+
+  .task-log-para{
+    margin-left: 3rem;
+    margin-top: -1rem;
+  }
+
+  .progress-data{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .head{
+    font-weight: 600;
+    margin-top: 3rem;
+    margin-left: 1rem;
+  }
+
+  .task-header{
+    margin-top: 1rem;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+.details{
+
+    color: purple;
+    position: absolute;
+    margin-left: 50rem;
+    margin-top: -1.5rem;
+    
+}
+
+.warn{
+    color: red;
+}
+
+.recommended-task{
+    position: absolute;
+    margin-top: 3rem;
+    font-size: 1.2rem;
+}
+
+.wrench-icon{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.recommended-data{
+    font-size: small;
+    position: relative;
+    margin-left: 4rem;
+    margin-top: -1.5rem;
+}
+
+.open{
+    position: absolute;
+    right: -12rem;
+    margin-top:-4rem; 
+
+}

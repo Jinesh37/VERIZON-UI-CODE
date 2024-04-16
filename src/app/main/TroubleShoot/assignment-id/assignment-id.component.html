@@ -1,0 +1,177 @@
+<header>
+    <!-- <h1>Header</h1> -->
+    <app-header></app-header>
+</header>
+<aside>
+    <app-sidenav></app-sidenav>
+</aside>
+<main>
+    <div class="random-content1">
+        <div id="user-information">
+            <h1>Task overview</h1>
+            <button class="btn" style="color: white; background-color: black;">l-1101</button>
+        </div>
+        <div id="user-information-form">
+            <h1>Customer Details</h1>
+            <div id="form">
+                <label>Customer Name</label>
+                <input type="text" value="Alex Ray"  disabled>
+                <label>Phone</label>
+                <input type="tel" value="+91 9999999999" disabled>
+                <label>Email</label>
+                <input type="email" disabled value="ray.alex@uplay.com">
+            </div>
+
+        </div>
+        <div id="troubleshoot">
+            <h1>Troubleshooting status summary</h1>
+            
+            <table>
+                <tr>
+                    <th>Step</th>
+                    <th>Status</th>
+                    
+                </tr>
+                <tr>
+                    <td>Power</td>
+                    <td><button class="ok">Ok</button></td>
+                   
+                </tr>
+                <tr>
+                    <td>Internet</td>
+                    <td><button>FAIL</button></td>
+                </tr>
+                <tr>
+                    <td>Speed Test</td>
+                    <td><button>FAIL</button></td>
+                </tr>
+            </table>
+        </div>
+        <div id="time">
+            <h1>Audit Trial</h1>
+            <div id="time-deatils">
+                <p>06:30AM -Contacted The Customer</p>
+                <p>06:32AM-Performed a Gateway Hardware diagnostics</p>
+                <p>06:34AM-Conducted a connectivity test</p>
+                <p>06:36AM-Updated the firmware</p>
+            </div>
+            <div class="extra-step">
+                
+                <p>Connectivity is still slow.Esclation needs T2 Suport</p>
+                <b>what's next</b>
+                <p><b>.</b>&nbsp;The Task has been esclated to a network engineer for further reviews</p>
+                <p><b>.</b>&nbsp;Updates will be sent to the customer via their selected preferences</p>
+            </div>
+        </div>
+
+        <div class="user-details">
+            <div class="location">
+             <h2>123,avc avenue,Irving ,TX</h2>
+                <img src="../../../../assets/img/location.png" alt="">
+            </div>
+            <div class="contact">
+                <h2>+1(345) 678 912</h2>
+                <img src="../../../../assets/img/phone-call.png">
+            </div>
+        </div>
+
+    </div>
+    <div class="random-content2">
+        <div class="task-log">
+
+            <div class="task-header">
+                Task log
+            </div>
+        
+            <div class="details">
+                More details
+            </div>
+        
+            <div class="progress-bar">
+        
+                  <div class="progress-data">
+                    <div class="head">Customer notified</div>
+                    <div class="head"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Router status<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; check</div>
+                    <div class="head">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Firmware upgrade</div>
+                    <div class="head">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Speed check</div>
+                    <div class="head">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; troubleshooting</div>
+        
+                </div>
+                
+        
+                  <div class="progress-container">
+                    <div class="progress-track">
+                      <div *ngFor="let step of steps; let i = index" class="progress-circle" [ngClass]="{'completed': i < progressValue}">
+                        <!-- <span class="step-number" style="margin-top: -4rem;">{{ step }}</span> -->
+                      </div>
+                    </div>
+                  </div>
+        
+            
+            </div>
+        
+        
+            <div class="task-log-data">
+                <div class="task-log-icons">
+                    <img src="../../../../assets/img/right.png" alt="right">
+                        <h3 class="task-log-header"> Hardware diagnostics</h3>
+                </div>
+                <div class="task-log-para">
+                    Please conduct a through diagnostic test to assess the hardware components and identify any potential issues or malfunction.
+                </div>
+        
+                <div class="task-log-data" style="margin-top: 2rem;">
+                    <img src="../../../../assets/img/right.png" alt="wrong" width="30" style="margin-top:-3rem ;">
+                    <h3 class="task-log-header" style="margin-top: -3rem;"> Connectivity diagnostics</h3>
+                </div>
+        
+                <div class="task-log-para">
+                    Conduct Connectivity diagnostics to assess the network and internet connectivity.
+                </div>
+            </div>
+        </div>
+
+        <div class="results">
+            <div class="task-header">
+                Result
+            </div>
+
+            <div class="warn">
+                <mat-icon style="margin-top: 5px; position: absolute;">warning</mat-icon> 
+                <p style="position:absolute; margin-top: 9px; margin-left: 2rem;">Connectivity is still below threshold.</p>
+            </div>
+        </div>
+
+        <div class="recommended-task">
+            <div class="task-header">
+                Recommended Task
+            </div>
+            <div class="wrench-icon">
+                <img src="../../../../assets/img/wrench.jpg" alt="wrench" width="50">
+                <div class="sub-header">
+                    <h3 style="font-weight: 900;margin-left: 1rem;">Network Level Troubleshooting Required</h3>
+                </div>
+            </div>
+            <div class="recommended-data">
+                <p>Conduct a thorough network level troubleshooting to identify the root cause of the issue and resolve it.</p>
+            </div>
+
+            <div class="open">
+                <button type="button" style="color: white; background-color: black;" routerLink="/troubleshoot/graph">Open</button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    
+</main>
+
+
+
+
+
+
+
+
